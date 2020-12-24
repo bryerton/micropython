@@ -24,13 +24,13 @@ Also required is [ampy](https://github.com/scientifichackers/ampy) which is used
 Plug a micro USB cable into the ESP32 devkit, a new COM port should appear on your computer (if not, you may need to install a device driver for the CP2104 USB-UART, or similiar device, depending on your devkit).
 
 Erase the flash of the ESP32 using the following, please replace `COM4` with the appropriate port
->`esptool.py --chip esp32 --port COM4 erase_flash`
+>esptool.py --chip esp32 --port COM4 erase_flash
 
 Then program the micropython firmware into the ESP32
->`esptool.py --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 esp32-idf3-20200902-v1.13.bin`
+>esptool.py --chip esp32 --port COM4 --baud 460800 write_flash -z 0x1000 esp32-idf3-20200902-v1.13.bin
 
 Lets test `ampy` and make sure it's working
->`ampy --port COM4 --baud 115200 ls`
+>ampy --port COM4 --baud 115200 ls
 
 Expected result is
 
@@ -43,10 +43,10 @@ Expected result is
 Let's upload a simple example that blinks the red LED on the HUZZAH32 devkit
 
 Run the following
->`ampy --port COM4 --baud 115200 src/main.py`
+>ampy --port COM4 --baud 115200 src/main.py
 
 Verify the main.py was uploaded
->`ampy --port COM4 --baud 115200 ls`
+>ampy --port COM4 --baud 115200 ls
 
 Expected result is
 
