@@ -14,10 +14,10 @@
 First step is to grab the micropython binary from [here](https://micropython.org/download/esp32/), I recommend the latest stable version from the ESP-IDF v3.x branch, which is currently [v1.13](https://micropython.org/resources/firmware/esp32-idf3-20200902-v1.13.bin)
 
 Next the very handy tool [esptool.py](https://github.com/espressif/esptool), which is used to load the binary onto the ESP32. It can be installed via pip
->`pip install esptool`
+>pip install esptool
 
 Also required is [ampy](https://github.com/scientifichackers/ampy) which is used to upload our python filest to the devkit. It can be installed via pip
->`pip install adafruit-ampy`
+>pip install adafruit-ampy
 
 ## Setup
 
