@@ -43,7 +43,7 @@ Expected result is
 Let's upload a simple example that blinks the red LED on the HUZZAH32 devkit
 
 Run the following
->ampy --port COM4 --baud 115200 src/main.py
+>ampy --port COM4 --baud 115200 put src/main.py
 
 Verify the main.py was uploaded
 >ampy --port COM4 --baud 115200 ls
